@@ -1,0 +1,7 @@
+<% if @search_analytics %>
+  <% @search_analytics.each do |search_analytic| %>
+    <div><%= search_analytic.query %></div>
+  <% end %>
+<% else %>
+  <div>No search analytics found.</div>
+<% end %>
